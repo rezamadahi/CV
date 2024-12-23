@@ -1,0 +1,19 @@
+<header>
+
+  <div class="mobile-header flex lg:hidden"></div>
+
+  <div class="normal-header hidden lg:flex">
+    <div class="header-menu" [ngClass]="isDarkMode ? 'dark-header' : 'light-header'">
+      <div class="left-menu">
+<!--        <a>Home</a>-->
+      </div>
+      <div class="right-menu">
+        <div class="theme-icon">
+          <i class="pi pi-sun cursor-pointer" *ngIf="isDarkMode" (click)="toggleDarkMode()"></i>
+          <i class="pi pi-moon cursor-pointer" *ngIf="!isDarkMode" (click)="toggleDarkMode()"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>

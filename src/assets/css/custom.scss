@@ -1,0 +1,66 @@
+//================================================== Global =============================================
+
+body {
+  font-family: "Shabnam", sans-serif, Arial !important;
+}
+
+.normal-header {
+
+  .header-menu {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .right-menu {
+      .theme-icon i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .dark-header {
+    box-shadow: 0 3px 4px rgba(255, 255, 255, 0.1);
+  }
+
+  .light-header {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+.main {
+  padding: 16px 24px;
+}
+
+//================================================= #Global ==============================================
+
+
+//================================================== Media query =========================================
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 1399.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+//================================================= #Media query =========================================
