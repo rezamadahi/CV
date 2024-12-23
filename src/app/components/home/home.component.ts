@@ -1,11 +1,19 @@
 import {Component, OnInit} from '@angular/core';
-import { ButtonModule } from 'primeng/button';
 import {HeaderComponent} from "../header/header.component";
+
+import { DividerModule } from 'primeng/divider';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonModule, HeaderComponent],
+  imports: [
+    HeaderComponent,
+    DividerModule,
+    ButtonModule,
+    CardModule,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -17,8 +25,4 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleDarkMode() {
-    const element = document.querySelector('html');
-    element?.classList.toggle('my-app-dark');
-  }
 }
